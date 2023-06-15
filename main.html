@@ -3,58 +3,56 @@
 <html>
 
 <head>
-	<title>Job App Form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
- <form method="post">
-	<div>
-       <label for="name">Name:</label><br/>
-       <input type="text"id="name" name="username" placeholder="Name" required>
-    </div>
-	<br>
-	<div>
-        <lable for="email">Email:</lable><br/>
-        <input type="text"  id="email"name="email" placeholder="Email" required >
-    </div>
-	 <br>
-	<div>
-        <lable for="gender"> Gender:</lable> <br>
-        Male:<input type="radio" name="gender" required ><br/>
-        FeMale:<input type="radio" name="gender" required><br/><br/>
-    </div>
-	 
-	<div>
-        <label for="laptops">Laptop Brands:</label>
-        <select name="laptops" id="brand" width="100">
-            <option value="Apple">Apple</option>
-            <option value="Asus">Asus</option>
-            <option value="HP">HP</option>
-        </select>
-       </div>
-	 <div>
-        <lable for="age">Age:</lable><br/>
-        <input type="text" name="Age"  id="age"placeholder="Age" required >
-    </div>
-	<div>
-		<lable for="dob">DOB:</lable><br/>
-        <input type="date" id="dob" required><br/>
-	</div>
-	<div>
-        <lable for="password">password:</lable><br/>
-        <input type="password" name="password" id="pass" required><br/>
-       </div>
-	<div> 
-		<label for="submit">Submit</label><br>
-         <input type="submit" id="sub" value="Submit" ></input>
-          
-       </div>
-	</form>
- 
     <script type="text/javascript" src="./script.js">
 </script>
+	<form>
+		<label for = "name">Name*</label>
+		<input type = "text" id = "name" placeholder= "Name" required>
+		<br>
+		
+		<label for = "email">Email*</label>
+		<input type = "email" id = "email" placeholder= "Email" required>
+		<br>
+
+		<label for = "Gender">Gender*</label>
+		<label for="Male">Male</label>
+	    <input type="radio" name="gender" id="gender_m" required>
+	    <label for="Female">Female</label>
+	    <input type="radio" name="gender" id="gender_m" required>
+		<br>
+
+		<label for = "Laptop Brands">Laptop Brands*</label>
+		<select name = "Laptop Brands" id= "Laptop Brands">
+			<option value = "--Please select Your Laptop Brand--" selected disabled>--Please select Your Laptop Brand--</option>
+			<option value = "Apple" id = "Apple">Apple</option>
+			<option value = "Asus" id = "Asus">Asus</option>
+			<option value = "HP" id = "HP">HP</option>
+		</select>
+
+		<label for = "Portfolio"> Portfolio*</label>
+		<input type = "url" name = "Portfolio" id = "Portfolio" required>
+		<br>
+
+		<label for="age">Age*</label>
+		<input type ="date" name = "age" id = "age" required>
+		<br>
+
+		<label for="dob">DOB*</label>
+		<input type ="number" name = "dob" id = "dob" required>
+		<br>
+
+		<label for = "password" >Password*</label>
+		<input type = "password" name = "password" id= "password" placeholder="Passwrd" required>
+		<br></br>
+
+		<button type = "submit">Submit
+				
+	</form>
 
 </body>
 
